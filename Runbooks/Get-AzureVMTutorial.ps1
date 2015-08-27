@@ -34,6 +34,8 @@ workflow Get-AzureVMTutorial
     if(!$VMs) {
         Write-Output "No VMs were found in your subscription."
     } else {
-        Write-Output $VMs[0..9]
+		Write-Output "My running vms: "
+        Get-azureVM | where {$_.Status -like "ReadyRole"} 
+
     }
 }
