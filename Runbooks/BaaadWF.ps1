@@ -5,7 +5,4 @@
 <#This is a malformed runbook.  Should fail to sync to Automation Source Control#>
 workflow BaaadWF {
 	
-	Write-Output "ajsdfkdsjfak"	
- 
- 
-}
+	
