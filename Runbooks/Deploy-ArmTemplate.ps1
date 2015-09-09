@@ -90,6 +90,7 @@ workflow Deploy-ArmTemplate
     #Set error action to stop so runbook fails if there are any errors in deployement
     $ErrorActionPreference = "Stop"
 
+    #Get assets from secure asset store
     $EmailCreds = Get-AutomationPSCredential -Name $EmailCredentialsName
     $AzureCred = Get-AutomationPSCredential -Name $AzureADCredName
     $Token = Get-AutomationVariable -Name $TokenName
