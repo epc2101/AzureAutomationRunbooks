@@ -1,4 +1,4 @@
-﻿workflow Get-VMwareProblemVMs
+workflow Get-VMwareProblemVMs
 {
     [OutputType([string[]])]
 
